@@ -8,7 +8,7 @@ namespace GalaxyWars.Interfaces
 {
     class Sleestak : Species, IReligious
     {
-        private string[] _weapons = new string[2] { "Laser Gun", "Electric Drill" };
+        private string[] _weapons = new string[2] { "Crossbow", "Sharp Stick" };
 
         public override string Color
         {
@@ -29,7 +29,7 @@ namespace GalaxyWars.Interfaces
         {
             get
             {
-                return "";
+                return "A reptilian bipedal humanoid species. They have a thin but wide-set mouths and large, round black eyes that are averse to light. Covered mostly in green scales, their bellies are yellow.";
             }
         }
 
