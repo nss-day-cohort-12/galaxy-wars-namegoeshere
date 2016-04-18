@@ -8,11 +8,11 @@ namespace GalaxyWars.Interfaces
 {
     public class Predador : Species, IWarrior
     {
-        private string[] _weapons = new string[2] { "Laser Gun", "Electric Drill" };
+        private string[] _weapons = new string[2] { "Proton Cannon", "Plasma Grenade" };
 
         public override string Color
         {
-            get { return "Red";}
+            get { return "Blue";}
         }
 
         public override int NumberOfArms
@@ -29,7 +29,7 @@ namespace GalaxyWars.Interfaces
         {
             get
             {
-                return "";
+                return "A hardy and intelligent species that is cunning and calculated with a high degree of blood lust.";
             }
         }
 
