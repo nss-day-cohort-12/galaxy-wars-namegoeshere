@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    public interface IReligious
+    interface ISpacefaring
     {
-        string ReligionName { get; }
     }
 }

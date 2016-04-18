@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaxyWars.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,55 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-    class Species
+    public abstract class Species : ISpecies
     {
-        public double population { get; set; }
-        public string health { get; set; }
-        public string language { get; set; }
-        public bool gender { get; set; }
-        public string weapon { get; set;}
-        //can add more once we get into project a little 
-       
+        public abstract string Color
+        {
+            get;
+        }
+
+        public abstract int NumberOfArms
+        {
+            get;
+        }
+
+        public abstract int Population
+        {
+            get;set;
+        }
+
+        public abstract string SpeciesDescription
+        {
+            get;
+        }
+
+        public abstract string[] Weapons
+        {
+            get;set;
+        }
+
+        public Species(int population)
+        {
+            Population = population;
+        }
+
+        public static Species GetSpecies(string speciesName, int population)
+        {
+            Species species;
+            switch (speciesName)
+            {
+                case "Delek":
+                    species = new Dalek(population);
+                    break;
+                case "Predador":
+                    species = new Predador(population);
+                    break;
+                default:
+                    species = new Sleestak(population);
+                    break;
+            }
+
+            return species;
+        }
     }
 }

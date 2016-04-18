@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    class Sleestak : Species, IReligious
+    public class Dalek : Species, ISpacefaring
     {
         private string[] _weapons = new string[2] { "Laser Gun", "Electric Drill" };
 
         public override string Color
         {
-            get { return "Green"; }
+            get { return "Grey"; }
         }
 
         public override int NumberOfArms
         {
-            get { return 2; }
+            get { return 3; }
         }
 
         public override int Population
@@ -29,7 +29,8 @@ namespace GalaxyWars.Interfaces
         {
             get
             {
-                return "";
+                return "A robot-like species that seeks only death and destruction.  " +
+                    "An immense hatred of someone called Doctor Who.";
             }
         }
 
@@ -39,12 +40,7 @@ namespace GalaxyWars.Interfaces
             set { _weapons = value; }
         }
 
-        public string ReligionName
-        {
-            get { return "Sovereignty"; }
-        }
-
-        public Sleestak(int population) : base(population)
+        public Dalek(int population) : base(population)
         {
         }
     }

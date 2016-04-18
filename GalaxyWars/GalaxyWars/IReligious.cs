@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    class Daleks : Species, ISpacefaring
+    interface IReligious
     {
     }
 }

@@ -43,8 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dalek.cs" />
+    <Compile Include="Interfaces\ISpecies.cs" />
+    <Compile Include="Interfaces\IReligious.cs" />
+    <Compile Include="Interfaces\ISpacefaring.cs" />
+    <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Interfaces\IWarrior.cs" />
+    <Compile Include="Predador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sleestak.cs" />
+    <Compile Include="Spacecraft.cs" />
+    <Compile Include="Species.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
