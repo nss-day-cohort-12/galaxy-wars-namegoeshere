@@ -38,6 +38,20 @@ namespace GalaxyWars.Interfaces
             get { return _weapons; }
             set { _weapons = value; }
         }
+        public override int NumberOfEyes
+        {
+            get { return 6; }
+        }
+
+        public override string TypeOfComics
+        {
+            get { return "Predator"; }
+        }
+
+        public override int NumberOfLegs
+        {
+            get { return 4; }
+        }
 
         public Predador(int population) : base(population)
         {

@@ -13,5 +13,8 @@ namespace GalaxyWars.Interfaces
         int NumberOfArms { get; }
         string Color { get; }
         String[] Weapons { get; set; }
+        int NumberOfEyes { get; }
+        int NumberOfLegs { get; }
+        string TypeOfComics { get; }
     }
 }

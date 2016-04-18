@@ -39,6 +39,21 @@ namespace GalaxyWars.Interfaces
             set { _weapons = value; }
         }
 
+        public override int NumberOfEyes
+        {
+            get { return 2; }
+        }
+
+        public override string TypeOfComics
+        {
+            get { return "Fraggle Rock"; }
+        }
+
+        public override int NumberOfLegs
+        {
+            get { return 2; }
+        }
+
         public string ReligionName
         {
             get { return "Sovereignty"; }

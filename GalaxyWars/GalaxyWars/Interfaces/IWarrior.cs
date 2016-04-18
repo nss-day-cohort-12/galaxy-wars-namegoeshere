@@ -8,5 +8,6 @@ namespace GalaxyWars.Interfaces
 {
     interface IWarrior
     {
+
     }
 }
