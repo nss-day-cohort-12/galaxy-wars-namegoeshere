@@ -40,6 +40,21 @@ namespace GalaxyWars.Interfaces
             set { _weapons = value; }
         }
 
+        public override int NumberOfEyes
+        {
+            get { return 1; }
+        }
+
+        public override string TypeOfComics
+        {
+            get { return "Batman"; }
+        }
+
+        public override int NumberOfLegs
+        {
+            get { return 2; }
+        }
+
         public Dalek(int population) : base(population)
         {
         }

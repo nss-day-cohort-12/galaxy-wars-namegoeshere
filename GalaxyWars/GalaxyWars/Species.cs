@@ -34,6 +34,21 @@ namespace GalaxyWars
             get;set;
         }
 
+        public abstract int NumberOfLegs
+        {
+            get;
+        }
+
+        public abstract int NumberOfEyes
+        {
+            get;
+        }
+
+        public abstract string TypeOfComics
+        {
+            get;
+        }
+
         public Species(int population)
         {
             Population = population;
