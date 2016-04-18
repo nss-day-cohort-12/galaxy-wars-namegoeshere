@@ -8,6 +8,8 @@ namespace GalaxyWars.Interfaces
 {
     interface IWarrior
     {
+        string WarriorName { get; }
 
+        int AggressivenessLevel { get; }
     }
 }

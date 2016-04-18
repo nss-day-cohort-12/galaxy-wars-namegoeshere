@@ -59,6 +59,11 @@ namespace GalaxyWars.Interfaces
             get { return "Sovereignty"; }
         }
 
+        public int FaithLevel
+        {
+            get { return 10; }
+        }
+
         public Sleestak(int population) : base(population)
         {
         }
