@@ -55,6 +55,16 @@ namespace GalaxyWars.Interfaces
             get { return 2; }
         }
 
+        public string SpacefaringName
+        {
+            get { return "Exterminators"; }
+        }
+
+        public int TechSavvyLevel
+        {
+            get { return 5; }
+        }
+
         public Dalek(int population) : base(population)
         {
         }

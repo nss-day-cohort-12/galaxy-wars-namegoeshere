@@ -8,5 +8,9 @@ namespace GalaxyWars.Interfaces
 {
     interface ISpacefaring
     {
-    }
+        string SpacefaringName { get; }
+        //Can change later.  Needed to get 2 more properties.
+        int TechSavvyLevel { get; }
+
+       }
 }

@@ -53,6 +53,17 @@ namespace GalaxyWars.Interfaces
             get { return 4; }
         }
 
+        public string WarriorName
+        {
+            get { return "Benji"; }
+        }
+
+        public int AggressivenessLevel
+        {
+            get { return 9; }
+        }
+
+
         public Predador(int population) : base(population)
         {
             Console.WriteLine("Predator species");
