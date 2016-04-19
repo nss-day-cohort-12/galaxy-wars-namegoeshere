@@ -9,6 +9,7 @@ namespace GalaxyWars
 {
     public class Battle
     {
+        //declaration
         private Dalek _dalek;
         private Sleestak _sleestak;
         private Predador _predador;
@@ -20,6 +21,7 @@ namespace GalaxyWars
         private Random _rnd = new Random();
         int _year = 1;
 
+        //specification of species name every 25 years
         public Species ReligiousSpecies
         {
             get
@@ -58,7 +60,8 @@ namespace GalaxyWars
                     return _predador;
             }
         }
-
+        //call in program.cs
+        //notation for console for the battle is over
         public Species FirstDeadSpecies
         { get; set; }
 
@@ -69,7 +72,7 @@ namespace GalaxyWars
             _predador = predador;
         }
 
-        private void CheckYear()
+        private void CheckYear() // what is happening every 25 years, with the proporties of the species
         {
             //int%int is dividing int with another int and the result is the remainder
             //so 25%25 is 0, 50%25 is 0, 75%25 is 0
@@ -80,7 +83,7 @@ namespace GalaxyWars
                 _warfareBeatsScience = !_warfareBeatsScience;
             }
         }
-
+        //Battle starts here
         public void FightBattle()
         {
             CheckYear();
@@ -105,13 +108,13 @@ namespace GalaxyWars
                 ScienceVsReligion();
                 ReligionVsWarfare();
             }
-
-            SpacefaringSpecies.Population += 5000;
-            WarriorSpecies.Population -= 2500;
+            
+            SpacefaringSpecies.Population += 5000; //spacefearing bonus for each year
+            WarriorSpecies.Population -= 2500; //warrior doc for each year
 
             _year++;
         }
-
+        //checking for a looser, anyone reach 0 or less population
         private void CheckSpeciesDeath()
         {
             if (SpacefaringSpecies.IsSpeciesDead)
@@ -121,7 +124,7 @@ namespace GalaxyWars
             else if (WarriorSpecies.IsSpeciesDead)
                 FirstDeadSpecies = WarriorSpecies;
         }
-
+        //define everything that could happend in each battle
         private void ScienceVsReligion()
         {
             SpacefaringSpecies.Population -= _battlePopulationLossBase;

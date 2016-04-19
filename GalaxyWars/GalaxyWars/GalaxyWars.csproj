@@ -43,25 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attack.cs" />
+    <Compile Include="Vehicles\Attack.cs" />
     <Compile Include="Battle.cs" />
-    <Compile Include="Bomber.cs" />
+    <Compile Include="Vehicles\Bomber.cs" />
     <Compile Include="Dalek.cs" />
-    <Compile Include="Destroyer.cs" />
+    <Compile Include="Vehicles\Destroyer.cs" />
     <Compile Include="Interfaces\ISpecies.cs" />
     <Compile Include="Interfaces\IReligious.cs" />
     <Compile Include="Interfaces\ISpacefaring.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
     <Compile Include="Interfaces\IWarrior.cs" />
-    <Compile Include="Medical.cs" />
+    <Compile Include="Vehicles\Medical.cs" />
     <Compile Include="Predador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recon.cs" />
+    <Compile Include="Vehicles\Recon.cs" />
     <Compile Include="Sleestak.cs" />
     <Compile Include="Spacecraft.cs" />
     <Compile Include="Species.cs" />
-    <Compile Include="Transport.cs" />
+    <Compile Include="Vehicles\Transport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
