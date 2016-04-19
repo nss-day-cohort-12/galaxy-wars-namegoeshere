@@ -9,7 +9,7 @@ namespace GalaxyWars
     class Spacecraft
     {
         //prelim construct info 
-        public string name { get; set; }
-        public string craftType { get; set; }
+        public string Name { get; set; }
+        public string Size { get; set; }
     }
 }
