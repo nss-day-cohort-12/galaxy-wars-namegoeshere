@@ -66,8 +66,8 @@ namespace GalaxyWars.Interfaces
 
         public Predador(int population) : base(population)
         {
-            Console.WriteLine("Predator species");
-            Console.WriteLine("Weapons: " + String.Join(", ", Weapons));
+                Console.WriteLine("Predator species");
+                Console.WriteLine("Weapons: " + String.Join(", ", Weapons));
         }
     }
 }

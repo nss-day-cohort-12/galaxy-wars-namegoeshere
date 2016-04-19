@@ -59,7 +59,7 @@ namespace GalaxyWars
             Species species;
             switch (speciesName)
             {
-                case "Delek":
+                case "Dalek":
                     species = new Dalek(population);
                     break;
                 case "Predador":
