@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-    class Destroyer: Spacecraft
+    class Attack : Spacecraft
     {
-        public string Name 
-            {
-                get { return "Destructor";  }
-            }
+        public string Name
+        {
+            get { return "Diego"; }
+        }
         public string Size
         {
-            get { return "Medium"; }
+            get { return "Big"; }
         }
     }
 }
