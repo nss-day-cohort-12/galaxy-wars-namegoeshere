@@ -64,6 +64,7 @@ namespace GalaxyWars
             Population = population;
         }
 
+        //When randomizing Species Battles ~ Switches the Species and instantiates a new population.
         public static Species GetSpecies(string speciesName, int population)
         {
             Species species;
