@@ -12,17 +12,23 @@ namespace GalaxyWars
         static void Main(string[] args)
         {
             Console.WriteLine("Start Program...");
+            //Create new instances of Species and pass in beginning population delcared within each Species.
             Dalek dalek = new Dalek(1000000);
             Sleestak sleestak = new Sleestak(1000000);
             Predador predador = new Predador(1000000);
+
+            //New Battle is created. Defined within Battle.
             Battle speciesBattle = new Battle(dalek, sleestak, predador);
 
-            while(true)
+            while (true)
             {
+                //Console Output referencing Species Populations each year + Weapons, etc.
                 speciesBattle.FightBattle();
-                Console.WriteLine("Population of Dalek: " + dalek.Population);
-                Console.WriteLine("Population of Predador " + predador.Population);
-                Console.WriteLine("Population of Sleestak " + sleestak.Population);
+                Console.WriteLine("Population of Dalek: " + dalek.Population + " " + dalek.Weapons[0]);
+                Console.WriteLine("Population of Predador " + predador.Population + " " + predador.Weapons[1]);
+                Console.WriteLine("Population of Sleestak " + sleestak.Population + " " + sleestak.Weapons[1]);
+
+                //Once Species hits 0 or negative = Game Over.
                 if (speciesBattle.FirstDeadSpecies != null)
                 {
                     Console.WriteLine("We have a loser!");

@@ -148,12 +148,47 @@ namespace GalaxyWars
 
         private void ReligionVsWarfare()
         {
-            //NEED TO FINISH THIS LOGIC
+            ReligiousSpecies.Population -= _battlePopulationLossBase;
+            WarriorSpecies.Population -= _battlePopulationLossBase;
+
+            CheckSpeciesDeath();
+
+            if (_religionBeatsWarfare)
+            {
+                WarriorSpecies.Population -= (int)(WarriorSpecies.Population * .02);
+                Console.WriteLine("This year could be your last! Fight to the death!");
+            }
+            else
+            {
+                ReligiousSpecies.Population -= (int)(ReligiousSpecies.Population * .02);
+            }
+
+            CheckSpeciesDeath();
+
+            int convertedPopulation = (int)(ReligiousSpecies.Population * .01);
+            ReligiousSpecies.Population += convertedPopulation;
+            WarriorSpecies.Population -= convertedPopulation;
+
+            CheckSpeciesDeath();
         }
 
         private void WarfareVsScience()
         {
-            //NEED TO FINISH THIS LOGIC
+            WarriorSpecies.Population -= _battlePopulationLossBase;
+            SpacefaringSpecies.Population -= _battlePopulationLossBase;
+
+            CheckSpeciesDeath();
+
+            if (_warfareBeatsScience)
+            {
+                WarriorSpecies.Population -= (int)(WarriorSpecies.Population * .02);
+            }
+            else
+            {
+                SpacefaringSpecies.Population -= (int)(SpacefaringSpecies.Population * .02);
+            }
+
+            CheckSpeciesDeath();
         }
     }
 }
