@@ -107,6 +107,7 @@ namespace GalaxyWars
             }
 
             SpacefaringSpecies.Population += 5000;
+            WarriorSpecies.Population -= 2500;
 
             _year++;
         }
@@ -139,6 +140,7 @@ namespace GalaxyWars
 
             CheckSpeciesDeath();
 
+
             int convertedPopulation = (int)(SpacefaringSpecies.Population * .01);
             ReligiousSpecies.Population += convertedPopulation;
             SpacefaringSpecies.Population -= convertedPopulation;
@@ -162,6 +164,8 @@ namespace GalaxyWars
             {
                 ReligiousSpecies.Population -= (int)(ReligiousSpecies.Population * .02);
             }
+
+            ReligiousSpecies.Population -= 10000;
 
             CheckSpeciesDeath();
 
@@ -187,6 +191,8 @@ namespace GalaxyWars
             {
                 SpacefaringSpecies.Population -= (int)(SpacefaringSpecies.Population * .02);
             }
+
+            SpacefaringSpecies.Population -= 10000;
 
             CheckSpeciesDeath();
         }
