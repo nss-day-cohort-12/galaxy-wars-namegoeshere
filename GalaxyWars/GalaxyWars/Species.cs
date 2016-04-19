@@ -7,46 +7,56 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars
 {
-    public abstract class Species : ISpecies
+    public class Species : ISpecies
     {
-        public abstract string Color
+        public virtual string Name
         {
             get;
         }
 
-        public abstract int NumberOfArms
+        public virtual string Color
         {
             get;
         }
 
-        public abstract int Population
+        public virtual int NumberOfArms
+        {
+            get;
+        }
+
+        public virtual int Population
         {
             get;set;
         }
 
-        public abstract string SpeciesDescription
+        public virtual string SpeciesDescription
         {
             get;
         }
 
-        public abstract string[] Weapons
+        public virtual string[] Weapons
         {
             get;set;
         }
 
-        public abstract int NumberOfLegs
+        public virtual int NumberOfLegs
         {
             get;
         }
 
-        public abstract int NumberOfEyes
+        public virtual int NumberOfEyes
         {
             get;
         }
 
-        public abstract string TypeOfComics
+        public virtual string TypeOfComics
         {
             get;
+        }
+
+        public bool IsSpeciesDead
+        {
+            get { return Population <= 0; }
         }
 
         public Species(int population)

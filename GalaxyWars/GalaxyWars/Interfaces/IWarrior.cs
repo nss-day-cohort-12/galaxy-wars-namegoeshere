@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    interface IWarrior
+    public interface IWarrior
     {
         string WarriorName { get; }
 

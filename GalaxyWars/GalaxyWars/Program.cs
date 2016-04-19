@@ -13,13 +13,24 @@ namespace GalaxyWars
         {
             Console.WriteLine("Start Program...");
             Dalek dalek = new Dalek(1000000);
-            //Does it make sense to create a dalek.population = 1000000; 
-                //
             Sleestak sleestak = new Sleestak(1000000);
-
             Predador predador = new Predador(1000000);
+            Battle speciesBattle = new Battle(dalek, sleestak, predador);
 
-            Console.WriteLine("Religion Name for Sleestak: " + sleestak.ReligionName);
+            while(true)
+            {
+                speciesBattle.FightBattle();
+                Console.WriteLine("Population of Dalek: " + dalek.Population);
+                Console.WriteLine("Population of Predador " + predador.Population);
+                Console.WriteLine("Population of Sleestak " + sleestak.Population);
+                if (speciesBattle.FirstDeadSpecies != null)
+                {
+                    Console.WriteLine("We have a loser!");
+                    Console.WriteLine("The species " + speciesBattle.FirstDeadSpecies.Name + " has been destroyed!");
+                    break;
+                }
+            }
+
             //Species dalek = Species.GetSpecies("Dalek", 1000000);
             //Species sleestak = Species.GetSpecies("Sleestak", 1000000);
             //Species predador = Species.GetSpecies("Predador", 1000000);
