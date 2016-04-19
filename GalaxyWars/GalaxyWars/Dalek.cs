@@ -10,6 +10,8 @@ namespace GalaxyWars.Interfaces
     {
         private string[] _weapons = new string[2] { "Laser Gun", "Electric Drill" };
 
+        public override string Name { get { return "Dalek"; } }
+
         public override string Color
         {
             get { return "Grey"; }

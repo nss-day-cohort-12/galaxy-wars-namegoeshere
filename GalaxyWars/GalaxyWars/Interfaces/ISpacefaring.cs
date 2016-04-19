@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    interface ISpacefaring
+    public interface ISpacefaring
     {
         string SpacefaringName { get; }
         //Can change later.  Needed to get 2 more properties.

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace GalaxyWars.Interfaces
 {
-    class Sleestak : Species, IReligious
+    public class Sleestak : Species, IReligious
     {
         private string[] _weapons = new string[2] { "Crossbow", "Sharp Stick" };
+
+        public override string Name { get { return "Sleestak"; } }
 
         public override string Color
         {

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Battle.cs" />
     <Compile Include="Dalek.cs" />
     <Compile Include="Interfaces\ISpecies.cs" />
     <Compile Include="Interfaces\IReligious.cs" />
